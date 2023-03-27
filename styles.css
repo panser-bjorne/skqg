@@ -1,0 +1,176 @@
+body {
+    background-color: #111;
+    color: #CCC;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+b, strong {
+    font-weight: 700;
+}
+
+input[type="text"], textarea {
+    background-color: #222;
+    border-radius: 0.2em;
+    color: #CCC;
+    border: 0.05em solid #333;
+}
+
+.inputfield {
+    width: 100%;
+    height: 1.25em;
+    font-size: 1em;
+    padding: 0.2em;
+    text-align: center;
+}
+
+.inputfield::placeholder {
+    color: #333;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+
+}
+#content {
+    width: calc(100vmin - 40px);
+    /* subtract 40px to account for padding and borders */
+    border: 1px solid black;
+    padding: 20px;
+    align-self: flex-start;
+    background-color: #191919;
+    text-align: center;
+}
+
+#titlehead {
+    display: inline-block;
+}
+#titleheading {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+    font-size: 6.5vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+#subheading {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.5vw;
+    text-align: right;
+    margin-top: -1.1em;
+}
+
+#date-fields {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.1em;
+    margin-top: 1em;
+    width: 98%;
+}
+
+#date-fields div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 30%;
+}
+
+label {
+    font-size: 0.55em;
+    margin-bottom: 5px;
+    margin-left: 0.3em;
+    font-weight: 700;
+}
+
+#query-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0.1em;
+    margin-top: 0.5em;
+    width: 98%;
+}
+
+#output-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0.1em;
+    margin-top: 0.5em;
+    width: 98%;
+}
+
+#output-field label {
+    font-size: 0.55em;
+    margin-bottom: 5px;
+    margin-left: 0.3em;
+    font-weight: 700;
+}
+
+#output-field textarea {
+    width: 101%;
+    font-size: 0.4em;
+    padding: 0.2em;
+    text-align: left;
+    height: 30vmin;
+    border: 0.1rem solid #333;
+    resize: none;
+}
+
+#button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5em;
+}
+
+#button-container button {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 0.6em;
+    color: #CCC;
+    background-color: #222;
+    border-radius: 0.2em;
+    border: 0.05em solid #333;
+    width: 79%;
+    padding: 0.5em;
+    text-align: center;
+}
+
+#button-container button:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+#button-container button:active {
+    background-color: #444;
+}
+
+#button-container button:last-child {
+    width: 19%;
+}
+
+#terminal-output {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0.1em;
+    margin-top: 0.5em;
+    width: 98%;
+}
+
+#terminal-output input {
+    width: 100.5%;
+    height: 1em;
+    font-size: 0.6em;
+    padding: 0.2em;
+    text-align: center;
+    background-color: #151515;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>三角照会生成器</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="fonts.css">
+</head>
+<body>
+    <div id="container">
+      <div id="content">
+          <div id="titlehead">
+              <div id="titleheading">三角照会生成器</div>
+              <div id="subheading">because fuck those guys</div>
+          </div>
+
+          <div id="date-fields">
+              <div>
+                  <label for="startdate">Start Date:</label>
+                  <input type="text" id="startdate" name="startdate" class="inputfield" placeholder="YYYY-MM-DD">
+              </div>
+              <div>
+                  <label for="enddate">End Date:</label>
+                  <input type="text" id="enddate" name="enddate" class="inputfield" placeholder="YYYY-MM-DD">
+              </div>
+              <div>
+                  <label for="enddate">Interval:</label>
+                  <input type="text" id="interval" name="interval" class="inputfield" placeholder="--">
+              </div>
+          </div>
+          <div id="query-field">
+              <label for="querystring">Query String:</label>
+              <input type="text" id="querystring" name="querystring" class="inputfield" placeholder="search query goes here">
+          </div>
+          <div id="output-field">
+              <label for="output">Output:</label>
+              <textarea id="output" name="output" class="inputfield" readonly></textarea>
+          </div>
+          <div id="button-container">
+              <button id="submit-button">Generate Queries</button>
+              <button id="clear-button">Clear</button>
+          </div>
+          <div id="terminal-output">
+              <input type="text" id="terminal" name="terminal" class="inputfield" readonly>
+          </div>
+      </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
