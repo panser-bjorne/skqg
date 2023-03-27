@@ -34,7 +34,7 @@ input[type="text"], textarea {
 #container {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    align-items: center;
 
 }
 #content {
@@ -42,9 +42,9 @@ input[type="text"], textarea {
     /* subtract 40px to account for padding and borders */
     border: 1px solid black;
     padding: 20px;
-    align-self: flex-start;
     background-color: #191919;
     text-align: center;
+    margin-top: 1rem;
 }
 
 #titlehead {
@@ -121,7 +121,7 @@ label {
     font-size: 0.4em;
     padding: 0.2em;
     text-align: left;
-    height: 30vmin;
+    height: 20vmin;
     border: 0.1rem solid #333;
     resize: none;
 }
