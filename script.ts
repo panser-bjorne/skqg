@@ -6,7 +6,7 @@ const outputTextArea = document.getElementById("output") as HTMLTextAreaElement;
 const submitButton = document.getElementById("submit-button") as HTMLButtonElement;
 const clearButton = document.getElementById("clear-button") as HTMLButtonElement;
 const terminalOutput = document.getElementById("terminal") as HTMLInputElement;
-const earliestDate = new Date(2008, 7, 1);
+const earliestDate = new Date(2008, 7, 20);
 
 window.addEventListener("load", clearFields);
 clearButton.addEventListener("click", clearFields);
