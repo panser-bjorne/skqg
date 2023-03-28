@@ -21,16 +21,22 @@ function genQueries() {
     var query = queryStringInput.value;
     var current = start;
     var counter = 0;
-    while (current < end) {
+    var _loop_1 = function () {
         var currentStart = dateToText(current);
         var nextDate = new Date(current.getTime() + interval * 24 * 60 * 60 * 1000);
         var currentEnd = dateToText(nextDate);
         if (nextDate > end) {
             currentEnd = dateToText(end);
         }
-        outputTextArea.value += "".concat(query, " date:").concat(currentStart, "..").concat(currentEnd, "\n");
+        var arr = query.split(", ");
+        arr.forEach(function (element) {
+            outputTextArea.value += "".concat(element, " date:").concat(currentStart, "..").concat(currentEnd, "\n");
+            counter++;
+        });
         current.setDate(current.getDate() + interval);
-        counter++;
+    };
+    while (current < end) {
+        _loop_1();
     }
     postTerminal("Successfully generated ".concat(counter, " queries."), false);
 }

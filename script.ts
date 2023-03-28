@@ -36,10 +36,14 @@ function genQueries(): void {
             currentEnd = dateToText(end);
         }
 
-        outputTextArea.value += `${query} date:${currentStart}..${currentEnd}\n`;
+        const arr = query.split(", ");
+
+        arr.forEach((element) => {
+            outputTextArea.value += `${element} date:${currentStart}..${currentEnd}\n`;
+            counter++;
+        })
 
         current.setDate(current.getDate() + interval);
-        counter++;
     }
 
     postTerminal(`Successfully generated ${counter} queries.`, false);
