@@ -124,3 +124,61 @@ function postTerminal(text: string, error: boolean): void {
     terminalOutput.value = error ? "ERROR: " + text : text;
     terminalOutput.style.color = error ? "red" : outputTextArea.style.color;
 }
+
+//----------------------------------- background
+
+function getRandomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function getRandomGrey() {
+    const shade = getRandomNumber(8, 12);
+    return `rgb(${shade}%, ${shade}%, ${shade}%)`;
+}
+
+const background = document.getElementById("background");
+
+for (let i = 0; i < 800; i++) {
+    const square = document.createElement("div");
+    square.style.position = "absolute";
+    square.style.width = `${getRandomNumber(6, 13)}rem`;
+    square.style.height = `${getRandomNumber(6, 13)}rem`;
+    square.style.opacity = "0.8";
+    square.style.backgroundColor = getRandomGrey();
+    square.style.transform = `rotate(-${Math.floor(Math.random() * 360)}deg)`;
+    square.style.animation = `rotate${getRandomNumber(1, 2)} ${getRandomNumber(20, 50)}s linear infinite`;
+    square.style.transformOrigin = `${getRandomNumber(10, 90)}% ${getRandomNumber(10, 90)}%`;
+    square.style.top = `${getRandomNumber(-20, 100)}%`;
+    square.textContent = `\u00A0\u00A0SKQG-${getRandomNumber(1111, 9999)}`;
+    square.style.color = "rgba(126, 126, 126, 0.07)";
+    square.style.fontSize = "1.2rem";
+    square.style.left = `${getRandomNumber(-20, 100)}%`;
+    background.appendChild(square);
+}
+
+const style = document.createElement("style");
+style.innerHTML = `
+        @keyframes rotate1 {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+        }
+        #background > div {
+          animation: rotate ${getRandomNumber(20, 50)}s linear infinite;
+        }
+@keyframes rotate2 {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(-360deg);
+          }
+        }
+        #background > div {
+          animation: rotate ${getRandomNumber(20, 50)}s linear infinite;
+        }
+      `;
+document.head.appendChild(style);

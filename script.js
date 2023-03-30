@@ -6,7 +6,7 @@ var outputTextArea = document.getElementById("output");
 var submitButton = document.getElementById("submit-button");
 var clearButton = document.getElementById("clear-button");
 var terminalOutput = document.getElementById("terminal");
-var earliestDate = new Date(2008, 7, 1);
+var earliestDate = new Date(2008, 7, 20);
 window.addEventListener("load", clearFields);
 clearButton.addEventListener("click", clearFields);
 submitButton.addEventListener("click", genQueries);
@@ -96,4 +96,33 @@ function postTerminal(text, error) {
     terminalOutput.value = error ? "ERROR: " + text : text;
     terminalOutput.style.color = error ? "red" : outputTextArea.style.color;
 }
+//----------------------------------- background
+function getRandomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+function getRandomGrey() {
+    var shade = getRandomNumber(8, 12);
+    return "rgb(".concat(shade, "%, ").concat(shade, "%, ").concat(shade, "%)");
+}
+var background = document.getElementById("background");
+for (var i = 0; i < 800; i++) {
+    var square = document.createElement("div");
+    square.style.position = "absolute";
+    square.style.width = "".concat(getRandomNumber(6, 13), "rem");
+    square.style.height = "".concat(getRandomNumber(6, 13), "rem");
+    square.style.opacity = "0.8";
+    square.style.backgroundColor = getRandomGrey();
+    square.style.transform = "rotate(-".concat(Math.floor(Math.random() * 360), "deg)");
+    square.style.animation = "rotate".concat(getRandomNumber(1, 2), " ").concat(getRandomNumber(20, 50), "s linear infinite");
+    square.style.transformOrigin = "".concat(getRandomNumber(10, 90), "% ").concat(getRandomNumber(10, 90), "%");
+    square.style.top = "".concat(getRandomNumber(-20, 100), "%");
+    square.textContent = "\u00A0\u00A0SKQG-".concat(getRandomNumber(1111, 9999));
+    square.style.color = "rgba(126, 126, 126, 0.07)";
+    square.style.fontSize = "1.2rem";
+    square.style.left = "".concat(getRandomNumber(-20, 100), "%");
+    background.appendChild(square);
+}
+var style = document.createElement("style");
+style.innerHTML = "\n        @keyframes rotate1 {\n          from {\n            transform: rotate(0deg);\n          }\n          to {\n            transform: rotate(360deg);\n          }\n        }\n        #background > div {\n          animation: rotate ".concat(getRandomNumber(20, 50), "s linear infinite;\n        }\n@keyframes rotate2 {\n          from {\n            transform: rotate(0deg);\n          }\n          to {\n            transform: rotate(-360deg);\n          }\n        }\n        #background > div {\n          animation: rotate ").concat(getRandomNumber(20, 50), "s linear infinite;\n        }\n      ");
+document.head.appendChild(style);
 //# sourceMappingURL=script.js.map

@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bf189f5-4889-4618-9b21-62a2364dd4df" name="Changes" comment="Initial commit">
+    <list default="true" id="5bf189f5-4889-4618-9b21-62a2364dd4df" name="Changes" comment="Updated earliestDate constant to correct date.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/script.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.ts" beforeDir="false" afterPath="$PROJECT_DIR$/script.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,31 +34,42 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <hideBySeverity>
+      <option value="11" />
+      <option value="12" />
+      <option value="13" />
+      <option value="14" />
+      <option value="15" />
+      <option value="16" />
+    </hideBySeverity>
+  </component>
   <component name="ProjectId" id="2Nc0ZUSitBAHwoeW5yc94oOUo9L" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/legion/Projects/SankakuQueryGenJS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "/home/legion/.local/share/JetBrains/Toolbox/apps/WebStorm/ch-0/223.8836.50/plugins/javascript-impl/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/legion/Projects/SankakuQueryGenJS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/legion/.local/share/JetBrains/Toolbox/apps/WebStorm/ch-0/223.8836.50/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Default" type="JavascriptDebugType" uri="http://localhost:63342/SankakuQueryGenJS/index.html" useBuiltInWebServerPort="true">
       <method v="2">
-        <option name="TypeScript.Before.Run" enabled="true" FAIL_ON_ERROR="true" CONFIG_PATH="" />
+        <option name="TypeScript.Before.Run" enabled="true" FAIL_ON_ERROR="true" />
       </method>
     </configuration>
   </component>
@@ -64,8 +82,32 @@
       <option name="presentableId" value="Default" />
       <updated>1679948118280</updated>
       <workItem from="1679948119418" duration="8000" />
-      <workItem from="1679948320998" duration="12124000" />
+      <workItem from="1679948320998" duration="17659000" />
+      <workItem from="1679997818933" duration="140000" />
+      <workItem from="1680200514503" duration="1917000" />
     </task>
+    <task id="LOCAL-00001" summary="Slight stylistic tweaks">
+      <created>1679960587097</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679960587097</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added undocumented function to run multiple queries simultaneously">
+      <created>1679961847675</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679961847675</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Updated earliestDate constant to correct date.">
+      <created>1679997950308</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679997950308</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -90,6 +132,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Slight stylistic tweaks" />
+    <MESSAGE value="Added undocumented function to run multiple queries simultaneously" />
+    <MESSAGE value="Updated earliestDate constant to correct date." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated earliestDate constant to correct date." />
   </component>
 </project>
