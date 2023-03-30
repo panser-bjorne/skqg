@@ -8,12 +8,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bf189f5-4889-4618-9b21-62a2364dd4df" name="Changes" comment="Updated earliestDate constant to correct date.">
+    <list default="true" id="5bf189f5-4889-4618-9b21-62a2364dd4df" name="Changes" comment="Added animated background">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/script.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.ts" beforeDir="false" afterPath="$PROJECT_DIR$/script.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +80,7 @@
       <workItem from="1679948119418" duration="8000" />
       <workItem from="1679948320998" duration="17659000" />
       <workItem from="1679997818933" duration="140000" />
-      <workItem from="1680200514503" duration="1917000" />
+      <workItem from="1680200514503" duration="2221000" />
     </task>
     <task id="LOCAL-00001" summary="Slight stylistic tweaks">
       <created>1679960587097</created>
@@ -107,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679997950308</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added animated background">
+      <created>1680203385998</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680203385998</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +138,7 @@
     <MESSAGE value="Slight stylistic tweaks" />
     <MESSAGE value="Added undocumented function to run multiple queries simultaneously" />
     <MESSAGE value="Updated earliestDate constant to correct date." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated earliestDate constant to correct date." />
+    <MESSAGE value="Added animated background" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added animated background" />
   </component>
 </project>
